@@ -1,0 +1,107 @@
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  border: 1px solid gray;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgba(237, 113, 144, 0.5) 0%, rgb(233, 131, 157) 100%);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#todo-container {
+  background: rgb(159, 168, 129);
+  width: 400px;
+  margin: 0 auto;
+  border: 5px solid #434d20;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+}
+
+#header {
+  margin: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#input-box{
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+#input-button{
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #434d20;
+  color: rgb(159, 168, 129);
+}
+
+#input-button:hover {
+  background-color: #434d208d; 
+  color: #434d20;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align:left;
+}
+
+li {
+display: flex; 
+align-items: center; 
+border: 1px solid white;
+border-radius: 5px;
+margin-bottom: 10px;
+padding: 2px;
+margin-top: 10px;
+}
+
+.task-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;   /* space between checkbox + text */
+  flex: 1;    /* take remaining space */
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  width: 10px;
+  height: 10px;
+  transform: scale(2); 
+  margin-right: 10px;
+}
+
+
+.edit-button, .delete-button {
+  float: right;
+  color:rgb(203, 14, 52);
+  font-weight: 500;
+  cursor: pointer;
+  margin: 3px 5px;
+  border: none;
+  padding: 3px 5px;
+  background: none;
+} 
